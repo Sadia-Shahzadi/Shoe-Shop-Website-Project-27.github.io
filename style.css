@@ -1,0 +1,374 @@
+/* Roboto Font Family Link  */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+/* Poppins  Font Family Link*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700;800&display=swap');
+
+*{ 
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    overflow-x: hidden;
+}
+
+/* Home Section Start  */
+nav{
+    display: flex;
+    padding: 2% 2%;
+}
+nav img{
+    cursor: pointer;
+}
+nav ul{
+    text-align: right;
+    flex: 1;
+}
+nav ul li{
+    display: inline-block;
+    padding: 10px 20px;
+}
+nav ul li a{
+    font-size: 16px;
+    color: black;
+}
+nav ul li a:hover{
+    color: blue;
+}
+nav ul li a::after{
+    content: "";
+    width: 0;
+    height: 2px;
+    display: block;
+    background-color: blue;
+    transition: .5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(shoe-images/homepage-bg-free-img-1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-size: cover;
+    position: relative;
+    margin-top: 5%;
+}
+.header h1{
+    text-align: center;
+    font-size: 150px;
+    font-weight: 800;
+    font-family: 'Poppins', sans-serif;
+    opacity: 365;
+    letter-spacing: 10px;
+    color: black;
+}
+.header img{
+    position: absolute;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-size: cover;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    margin-top: 8%;
+}
+.button a{
+    background-color: blue;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 80px;
+    width: 12%;
+    font-size: 18px;
+    margin: 10% 40%;
+    padding: 15px 50px;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+.button i{
+    padding-right: 10px;
+}
+/* Shop Section Start  */
+.shop{
+    background-color: gainsboro;
+    width: 100%;
+    height: 160vh;
+}
+.shop h1{
+    text-align: center;
+    font-size: 110px;
+    font-style: italic;
+    padding-top: 10%;
+    font-family: 'Poppins', sans-serif;
+}
+.shop h2{
+    text-align: center;
+    font-size: 45px;
+    font-style: italic;
+    font-family: 'Poppins', sans-serif;
+    line-height: 0.1;
+    margin-bottom: 10%;
+}
+.container{
+    width: 100%;
+    max-width: 1300px;
+    position: relative;
+    overflow: hidden;
+}
+.slider{
+    display: flex;
+    transition: transform 0.5s ease;
+}
+.slider-card{
+    position: relative;
+    margin: 30px 25px;
+}
+.slider-card img{
+    width: 275px;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    background-color: grey;
+    padding: 10px 10px;
+    color: white;
+    border-radius: 2px;
+    font-size: 22px;
+}
+.slider-text{
+    background-color: lightgray;
+    width: 275px;
+    height: 30vh;
+    text-align: center;
+}
+.slider-text h5{
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-weight: 200;
+    font-size: 18px;
+}
+.slider-text h3{
+    font-size: 20px;
+}
+.slider-text i{
+    padding: 20px 0;
+}
+.slider-text h4 span{
+    padding-right: 10px;
+    text-decoration: line-through;
+    color: lightslategray;
+}
+
+.slide-arrows{
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+}
+.prev-bttn,.next-bttn{
+    background-color: blue;
+    border: none;
+    font-size: 25px;
+    border-radius: 2px;
+    cursor: pointer;
+    color: white;
+    padding: 5px 15px;
+}
+.prev-bttn{
+    margin-right: 10px;
+}
+.next-bttn{
+    margin-left: 1190px;
+}
+/* About Section Start  */
+.about{
+    display: flex;
+    margin-top: 5%;
+}
+.slider-container{
+    width: 90%;
+    max-width: 700px;
+    position: relative;
+    margin-left: 40px;
+    overflow-x: hidden;
+}
+.slide{
+    display: flex;
+    transition: transform 0.5s ease;
+}
+.slide img{
+    width: 100%;
+    height: auto;
+}
+.slider-arrows{
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+}
+.prev-btn,.next-btn{
+    background-color: blue;
+    border: none;
+    font-size: 25px;
+    border-radius: 2px;
+    cursor: pointer;
+    color: white;
+    padding: 5px 15px;
+}
+.next-btn{
+    margin-left: 590px;
+}
+
+.other-container{
+    padding-top: 15%;
+    padding-left: 5%;
+}
+.other-container h1{
+    padding: 10px 0;
+    font-size: 80px;
+}
+.other-container p{
+    line-height: 1.9;
+    font-weight: 300;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+.other-container .button a{
+    margin: 5% 2%;
+}
+
+.stem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60vh;
+}
+.flex{
+    padding: 0 40px;
+    position: relative;
+}
+.flex h1{
+    color: gray;
+    opacity: .2;
+    font-size: 140px;
+}
+.flex h3{
+    position: absolute;
+    top: 35%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    font-size: 19px;
+    font-weight: 900;
+    font-family: 'Poppins', sans-serif;
+    padding-left: 40px;
+    text-align: center;
+}
+.flex p{
+    line-height: 1.9;
+    font-weight: 300;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+.background{
+    width: 100%;
+    height: 100vh;
+    background-image:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url(shoe-images/cta-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    color: white;
+    position: relative;
+    margin-top: 5%;
+}
+.background h3{
+    padding-top: 14%;
+    font-size: 30px;
+}
+.background h1{
+    font-size: 70px;
+    font-family: 'Poppins', sans-serif;
+}
+.background p{
+    line-height: 1.5;
+    font-weight: 500;
+    letter-spacing: 2px;
+    padding-top: 20px;
+}
+.background .button a{
+    margin-top: 5%;
+    margin-bottom: 0;
+}
+
+/* Contact Section Start  */
+.contact{
+    display: flex;
+    background: aliceblue;
+    padding-top: 5%;
+}
+.d1{
+    padding: 80px 30px;
+    margin-left: 40px;
+}
+.d1 h1{
+    color: black;
+    padding-bottom: 30px;
+    padding-top: 38px;
+    font-size: 24px;
+}
+.d1 a{
+    display: flex;
+    line-height: 1.8;
+    color: black;
+}
+.d1 a:hover{
+    color: blue;
+    transition: .5s;
+}
+.d1 img{
+    cursor: pointer;
+}
+.d1 p{
+    line-height: 1.5;
+    font-weight: 100;
+    padding: 30px 0;
+    color: black;
+    font-size: 16px;
+}
+.icons i{
+    background-color: blue;
+    padding: 8px 12px;
+    margin: 0 5px;
+    color: white;
+    font-size: 30px;
+}
+
+.copyright{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding: 20px 0;
+    border-top: 2px solid #fff;
+    height: 30px;
+    background-color: blue;
+}
+.copyright h1{
+    font-size: 20px;
+    color: #fff;
+}
